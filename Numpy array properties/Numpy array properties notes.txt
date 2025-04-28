@@ -1,0 +1,16 @@
+✨ Quick Summary of Methods:
+
+Method	Full Form	Meaning	Use Case
+shape	—	Dimensions of array (rows, columns, depth)	To understand array structure
+size	—	Total number of elements in array	To check total data points
+dtype	Data Type	Data type of array elements	Useful before doing calculations
+astype	As Type	Converts array to another data type	To change floats to ints or vice-versa
+ndim	Number of Dimensions	How many dimensions array has	To detect 1D, 2D, 3D etc.
+🔥 Important Points:
+astype() always creates a new array; original array remains unchanged.
+
+shape does not give the number of elements, size does.
+
+dtype is crucial while performing mathematical operations (e.g., float arrays vs int arrays).
+
+ndim helps you reshape or index arrays correctly.
