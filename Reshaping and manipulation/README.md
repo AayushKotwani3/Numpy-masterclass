@@ -124,6 +124,28 @@ np.vsplit(arr_2d, 2)
 
 ---
 
+## 🔍 Array Compatibility Check
+Before performing element-wise operations, check if array shapes match.
+
+```python
+a = np.array([1, 2, 3])        # Shape: (3,)
+b = np.array([4, 5, 6, 0])     # Shape: (4,)
+c = np.array([7, 8, 9])        # Shape: (3,)
+
+print('Compatibility between a and b:', a.shape == b.shape)  # False
+print('Compatibility between a and c:', a.shape == c.shape)  # True
+
+```
+
+**Output:**
+```
+Compatibility between a and b: False
+Compatibility between a and c: True
+
+```
+
+---
+
 ## ✅ Conclusion
 By mastering these core NumPy functions, you'll be able to handle real-world data manipulation tasks efficiently:
 - Reshape and transform array dimensions.
