@@ -38,11 +38,20 @@ print("Reversed array:", fourth)
 
 
 # ----------------------------------------
-# 2D ARRAY SLICING
+# 2D ARRAY INDEXING AND SLICING
 # ----------------------------------------
-# Syntax: arr[row_start:row_end, col_start:col_end]
-# Example below extracts rows 0–2 and columns 1–2 (excluding row 3 and column 3)
 
+# Accessing a specific row in a 2D array
+# Example: Second row (index 1)
+print('Second row:', arr_2d[1])
+
+# Accessing a specific column in a 2D array
+# Example: Third column (index 2)
+print('Third column:', arr_2d[:, 2])
+
+# Extracting a sub-array using slicing
+# Syntax: arr[row_start:row_end, col_start:col_end]
+# Example: Extracts rows 0–2 and columns 1–2 (excluding row 3 and column 3)
 sub_array = arr_2d[0:3, 1:3]
 print("2D Sliced Sub-array:\n", sub_array)
 
