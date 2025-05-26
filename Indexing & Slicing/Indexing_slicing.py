@@ -63,22 +63,58 @@ print("2D Sliced Sub-array:\n", sub_array)
 print("Fancy indexing on 1D:", arr_1d[[0, 2, 4]])  # Fetch elements at index 0, 2, and 4
 
 
+import numpy as np
+
 # ----------------------------------------
-# BOOLEAN MASKING
+# BOOLEAN MASKING ON ARRAYS
 # ----------------------------------------
-# Select values based on condition (returns a new array with elements that satisfy the condition)
-print("Boolean masking on 2D:", arr_2d[arr_2d > 25])  # All elements > 25
 
+# Boolean masking to extract values based on a condition
+# Returns a 1D array of elements where the condition is True
+print("Boolean masking on 2D (elements > 25):", arr_2d[arr_2d > 25])
+
+# ----------------------------------------
+# FILTERING ELEMENTS FROM 1D ARRAY
+# ----------------------------------------
+
+# Create a 1D array
+numbers = np.array([1, 2, 0, 3, 5, 6, 7, 8, 9, 10, 12, 45, 68, 90])
+
+# Extract all even numbers using boolean masking
+even_numbers = numbers[numbers % 2 == 0]
+print("Even numbers:", even_numbers)
+
+# ----------------------------------------
+# FILTERING WITH MASK
+# ----------------------------------------
+
+# Create a boolean mask for elements greater than 5
+mask = numbers > 5
+# Use the mask to filter values
+print("Numbers greater than 5:", numbers[mask])
+
+# ----------------------------------------
+# FANCY INDEXING vs. np.where()
+# ----------------------------------------
+
+# np.where returns the indices where condition is True
+where_result = np.where(numbers > 5)
+print("Indices where numbers > 5:", where_result)
+print("Values at those indices:", numbers[where_result])
+
+# np.where with 3 parameters: condition, value_if_true, value_if_false
+# This replaces numbers > 5 with number * 4, else keeps the number as-is
+condition_array = np.where(numbers > 5, numbers * 4, numbers)
+print("Apply logic: numbers > 5 → number * 4 else keep same:\n", condition_array)
+
+# np.where returning custom labels for each condition
+condition_array2 = np.where(numbers > 5, "True", "False")
+print("Condition labels (True/False):", condition_array2)
+
+# Equivalent pseudocode for the above logic:
 '''
-Filtering
+if numbers[i] > 5:
+    result = numbers[i] * 4
+else:
+    result = numbers[i]
 '''
-numbers=np.array([1,2,0,3,5,6,7,8,9,10,12,45,68,90])
-
-even_numbers=numbers[numbers % 2 == 0]
-print(even_numbers)
-
-#filter with mask
-
-mask=numbers>5
-print('numbers greater than 5',numbers[mask])
-
