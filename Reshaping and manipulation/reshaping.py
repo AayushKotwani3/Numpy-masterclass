@@ -36,3 +36,16 @@ print(arr_2d.flatten())
 # Note:
 # Use ravel() when you want performance (and don't need a copy).
 # Use flatten() when you need an independent copy of the data.
+
+# ----------------------------------------
+# ARRAY COMPATIBILITY CHECK
+# ----------------------------------------
+
+# Define three arrays
+a = np.array([1, 2, 3])         # Shape: (3,)
+b = np.array([4, 5, 6, 0])      # Shape: (4,)
+c = np.array([7, 8, 9])         # Shape: (3,)
+
+# Compare shapes of arrays to check compatibility (e.g., for element-wise operations)
+print('Compatibility between a and b:', a.shape == b.shape)  # False: shape (3,) != (4,)
+print('Compatibility between a and c:', a.shape == c.shape)  # True: both have shape (3,)
