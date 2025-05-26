@@ -68,3 +68,17 @@ print("Fancy indexing on 1D:", arr_1d[[0, 2, 4]])  # Fetch elements at index 0, 
 # ----------------------------------------
 # Select values based on condition (returns a new array with elements that satisfy the condition)
 print("Boolean masking on 2D:", arr_2d[arr_2d > 25])  # All elements > 25
+
+'''
+Filtering
+'''
+numbers=np.array([1,2,0,3,5,6,7,8,9,10,12,45,68,90])
+
+even_numbers=numbers[numbers % 2 == 0]
+print(even_numbers)
+
+#filter with mask
+
+mask=numbers>5
+print('numbers greater than 5',numbers[mask])
+
