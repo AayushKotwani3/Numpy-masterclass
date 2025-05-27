@@ -1,110 +1,42 @@
-📊 NumPy Operators and Aggregation Functions
+# 📊 NumPy Operators, Aggregation & Sorting Functions
 
-This repository showcases how to perform mathematical operations and aggregation functions using NumPy arrays. With these basic concepts, you can efficiently work with data and perform complex mathematical tasks.
+This repository showcases how to perform mathematical operations, aggregation functions, and array sorting using NumPy. These fundamental concepts help you manipulate, summarize, and order data with high performance and minimal code.
 
-📘 Table of Contents
+---
 
-Introduction
+## 📘 Table of Contents
+1. [Introduction](#1-introduction)
+2. [Mathematical Operators](#2-mathematical-operators)
+3. [Aggregation Functions](#3-aggregation-functions)
+4. [Sorting Arrays](#4-sorting-arrays)
+5. [Conclusion](#5-conclusion)
 
-Mathematical Operators
+---
 
-Aggregation Functions
+## 1. Introduction
 
-Conclusion
+NumPy is a powerful library in Python used for numerical computing. It enables fast operations on arrays, matrix calculations, and statistical evaluations. This guide walks through the basics of using NumPy for arithmetic, summarization, and sorting.
 
-1. Introduction
+---
 
-NumPy is a powerful library in Python used for numerical computing. It allows users to perform vectorized operations and matrix computations with ease. In this guide, we'll explore mathematical operators and aggregation functions available in NumPy.
+## 2. Mathematical Operators
 
-2. Mathematical Operators
+NumPy supports element-wise operations between arrays using familiar Python symbols:
 
-NumPy provides a wide range of mathematical operators that can be applied directly to NumPy arrays.
+| Operator | Description          |
+|----------|----------------------|
+| `+`      | Addition              |
+| `-`      | Subtraction           |
+| `*`      | Multiplication        |
+| `/`      | Division              |
+| `**`     | Exponentiation        |
+| `//`     | Floor Division        |
+| `%`      | Modulo (Remainder)    |
 
-Common Mathematical Operations:
+**Example:**
+```python
+import numpy as np
 
-Operator
-
-Description
-
-+
-
-Addition
-
--
-
-Subtraction
-
-*
-
-Multiplication
-
-/
-
-Division
-
-**
-
-Exponentiation
-
-//
-
-Floor Division
-
-%
-
-Modulo (Remainder)
-
-These operations are element-wise, which means the operation is applied to each element of the array.
-
-3. Aggregation Functions
-
-NumPy provides several functions to aggregate and summarize data in arrays, such as:
-
-Function
-
-Description
-
-np.sum()
-
-Sum of all elements
-
-np.mean()
-
-Mean (average) of elements
-
-np.min()
-
-Minimum value of the array
-
-np.max()
-
-Maximum value of the array
-
-np.std()
-
-Standard deviation of the elements
-
-np.var()
-
-Variance (square of standard deviation)
-
-These functions help to quickly compute summaries and statistics over an array.
-
-4. Conclusion
-
-NumPy simplifies performing mathematical operations and aggregating results on large datasets. With the operators and functions covered in this guide, you'll be able to:
-
-Perform quick element-wise operations on arrays.
-
-Summarize data using powerful aggregation functions.
-
-For more advanced NumPy features, feel free to explore official NumPy documentation.
-
-💡 Key Takeaways:
-
-NumPy allows for efficient mathematical operations on arrays.
-
-Aggregation functions such as np.sum(), np.mean(), etc., provide quick statistical summaries of data.
-
-Element-wise operations and broadcasting enable efficient handling of large datasets.
-
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+print(a + b)  # Output: [5 7 9]
