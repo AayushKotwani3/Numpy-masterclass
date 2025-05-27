@@ -101,7 +101,7 @@ print("Row-wise Reverse Sort:\n", sorted_rows_desc)
 sorted_cols_desc = np.sort(unsorted_2d_arr, axis=0)[::-1, :]
 print("Column-wise Reverse Sort:\n", sorted_cols_desc)
 ```
-###✅ 4.4 Getting Sort Indices
+### ✅ 4.4 Getting Sort Indices
 ```python
 arr = np.array([10, 2, 8, 4, 6])
 
@@ -117,12 +117,12 @@ print("Sorted using indices:", arr[indices_desc])
 
 With NumPy, you can efficiently:
 
--✅ Perform fast, vectorized mathematical operations
--✅ Aggregate data with built-in statistical functions
--✅ Sort and index arrays flexibly, even in multiple dimensions
+- ✅ Perform fast, vectorized mathematical operations
+- ✅ Aggregate data with built-in statistical functions
+- ✅ Sort and index arrays flexibly, even in multiple dimensions
 
 ### 💡 Key Takeaways:
 
--NumPy enables concise and efficient array operations.
--Aggregation functions are powerful tools for summarizing data.
--Sorting tools include standard sorting, reverse sorting, and index tracking.
+- NumPy enables concise and efficient array operations.
+- Aggregation functions are powerful tools for summarizing data.
+- Sorting tools include standard sorting, reverse sorting, and index tracking.
