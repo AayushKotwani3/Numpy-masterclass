@@ -121,7 +121,8 @@ numpy-masterclass/
 └── mini-project-restaurant-data/
 
 ## 💡 Keep Exploring
-Each topic is designed to be practical and example-driven. For deeper dives, check the official [NumPy documentation](https://numpy.org/doc/)
+Each topic is designed to be practical and example-driven. For deeper dives, check the official [NumPy Documentation](https://numpy.org/doc/)
+
 .
 
 ## 📬 Feedback & Contributions
