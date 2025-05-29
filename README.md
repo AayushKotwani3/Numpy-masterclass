@@ -123,8 +123,6 @@ numpy-masterclass/
 ## 💡 Keep Exploring
 Each topic is designed to be practical and example-driven. For deeper dives, check the official [NumPy Documentation](https://numpy.org/doc/)
 
-.
-
 ## 📬 Feedback & Contributions
 If you spot any errors or want to contribute new examples, feel free to raise an issue or open a pull request.
 
