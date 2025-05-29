@@ -119,3 +119,12 @@ numpy-masterclass/
 ├── broadcasting-and-vectorization/
 ├── handling-missing-values/
 └── mini-project-restaurant-data/
+
+## 💡 Keep Exploring
+Each topic is designed to be practical and example-driven. For deeper dives, check the official [NumPy documentation](https://numpy.org/doc/)
+.
+
+## 📬 Feedback & Contributions
+If you spot any errors or want to contribute new examples, feel free to raise an issue or open a pull request.
+
+Happy Learning! 🚀
